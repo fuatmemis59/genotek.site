@@ -1,50 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genotek Jeneratör ve Güç Sistemleri</title>
+    <title>Genotek - Jeneratör ve Güç Sistemleri</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; }
-        header { background-color: #003366; padding: 20px; text-align: center; }
-        header img { max-width: 200px; }
-        nav { background-color: #0055a5; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; max-width: 900px; margin: auto; background: white; }
-        footer { background-color: #003366; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: white;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f1f1f;
+            padding: 50px;
+            color: white;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #e10600;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hero img {
+            max-width: 40%;
+        }
+        .services {
+            padding: 50px;
+            text-align: center;
+        }
+        .services h2 {
+            margin-bottom: 20px;
+        }
+        .service-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        .service-item {
+            max-width: 250px;
+        }
+        .service-item img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .about {
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .about h2 {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <img src="genotek-logo.png" alt="Genotek Logo">
-    </header>
+
+<header>
+    <img src="logo.png" alt="Genotek Logo">
     <nav>
+        <a href="#">Ana Sayfa</a>
         <a href="#hakkimizda">Hakkımızda</a>
-        <a href="#hizmetler">Hizmetler</a>
         <a href="#iletisim">İletişim</a>
     </nav>
-    <section id="hakkimizda">
-        <h2>Hakkımızda</h2>
-        <p>Genotek Jeneratör ve Güç Sistemleri olarak, jeneratörler, UPS ve diğer güç çözümlerinde satış, kurulum, bakım ve teknik destek hizmetleri sunuyoruz.</p>
-    </section>
-    <section id="hizmetler">
-        <h2>Hizmetlerimiz</h2>
-        <ul>
-            <li>Jeneratör Satış ve Kurulum</li>
-            <li>UPS ve Güç Sistemleri</li>
-            <li>Periyodik Bakım ve Onarım</li>
-            <li>Teknik Danışmanlık</li>
-        </ul>
-    </section>
-    <section id="iletisim">
-        <h2>İletişim</h2>
-        <p>Telefon: +90 5XX XXX XX XX</p>
-        <p>E-posta: info@genotek.com</p>
-        <p>Adres: İstanbul, Türkiye</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Genotek Jeneratör ve Güç Sistemleri</p>
-    </footer>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>GENOTEK<br>JENERATÖR VE GÜÇ SİSTEMLERİ</h1>
+        <button>Bize Ulaşın</button>
+    </div>
+    <img src="generator.jpg" alt="Jeneratör">
+</section>
+
+<section class="services">
+    <h2>Hizmetlerimiz</h2>
+    <p>Jeneratör ve güç sistemlerine dair ihtiyaçlarınız için profesyonel çözümler sunuyoruz.</p>
+    <div class="service-list">
+        <div class="service-item">
+            <img src="icon1.png" alt="Jeneratör Temini">
+            <h3>Jeneratör Temini</h3>
+            <p>Geniş yelpazede jeneratörler temin ediyoruz.</p>
+        </div>
+        <div class="service-item">
+            <img src="icon2.png" alt="Satış">
+            <h3>Satış</h3>
+            <p>Jeneratör ve güç sistemleri satışı gerçekleştiriyoruz.</p>
+        </div>
+        <div class="service-item">
+            <img src="icon3.png" alt="Bakım ve Servis">
+            <h3>Bakım ve Servis</h3>
+            <p>Jeneratörlerin bakım ve servis hizmetlerini sağlıyoruz.</p>
+        </div>
+    </div>
+</section>
+
+<section id="hakkimizda" class="about">
+    <h2>Hakkımızda</h2>
+    <p>Genotek, jeneratör ve güç sistemleri konusunda uzmanlaşmış yenilikçi bir firmadır. Müşteri memnuniyetini ön planda tutarak, güvenilir ve kaliteli çözümler sunmayı amaçlıyoruz.</p>
+</section>
+
 </body>
 </html>
